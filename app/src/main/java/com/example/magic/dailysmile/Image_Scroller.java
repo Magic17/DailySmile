@@ -12,8 +12,6 @@ import android.widget.ImageView;
 import java.io.File;
 import java.util.ArrayList;
 
-//test
-// first commit and push
 public class Image_Scroller extends ActionBarActivity implements GestureDetector.OnGestureListener,
         GestureDetector.OnDoubleTapListener {
 
@@ -92,14 +90,6 @@ public class Image_Scroller extends ActionBarActivity implements GestureDetector
 
     @Override
     public boolean onSingleTapUp(MotionEvent e) {
-       /*if (i == 2) {
-            i = 0;
-        }
-        else {
-            i += 1;
-        }
-        image1.setImageResource(imgs[i]);
-        */
         return false;
     }
 
@@ -130,6 +120,7 @@ public class Image_Scroller extends ActionBarActivity implements GestureDetector
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         this.gDetector.onTouchEvent(event);
+		
         // Be sure to call the superclass implementation
         return super.onTouchEvent(event);
     }
